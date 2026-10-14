@@ -1,0 +1,18 @@
+{
+  "recordCount": 30,
+  "newRecord": "dist/line-4/30.json",
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "changedPixels": 2175,
+  "unchangedPixels": 1570341,
+  "outsideAdditionIdentical": true,
+  "oldRecordsAndToolsUnchanged": true,
+  "goalUnchanged": true,
+  "requiredImagesUntracked": true,
+  "newSourceFilesAtMost100000Bytes": true,
+  "hiddenCharacterDemo": "exit 1, U+200B at scalar/byte offset 17",
+  "unmetVisualRequirements": []
+}

@@ -1,0 +1,51 @@
+{
+  "reviewVersion": 1,
+  "primaryType": "PaymentEvidence",
+  "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+  "domainSeparator": "0xecd64edd15c833a06e3f707277e41fb76aace22e417bd7dc0b540966a0b6ba75",
+  "messageHash": "0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599",
+  "digest": "0xbfb900e0600fc47b3861a5500a57060335882baf9a3c8993bd6f494649334714",
+  "unicodeDatabaseVersion": "15.0.0",
+  "strings": [
+    {
+      "path": "/domain/name",
+      "value": "Read-only Payment\u200b Evidence",
+      "scalarCount": 27,
+      "utf8Bytes": 29,
+      "utf8Hex": "526561642d6f6e6c79205061796d656e74e2808b2045766964656e6365",
+      "word": "0x3c055b9401018b68f08d43b3650818c351efb70782355d5b25b26170aee7721b",
+      "cues": [
+        {
+          "scalarIndex": 17,
+          "utf8OffsetBytes": 17,
+          "codePoint": "U+200B",
+          "name": "ZERO WIDTH SPACE",
+          "category": "Cf",
+          "bidirectionalClass": "BN",
+          "utf8Hex": "e2808b",
+          "reasons": [
+            "non_ascii",
+            "control_format_or_unassigned"
+          ]
+        }
+      ],
+      "normalizationAlternatives": [],
+      "needsReview": true
+    },
+    {
+      "path": "/domain/version",
+      "value": "1",
+      "scalarCount": 1,
+      "utf8Bytes": 1,
+      "utf8Hex": "31",
+      "word": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+      "cues": [],
+      "normalizationAlternatives": [],
+      "needsReview": false
+    }
+  ],
+  "stringCount": 2,
+  "needsReview": true,
+  "interpretation": "Cues request human review; absence of cues is not approval. Original UTF-8 bytes determine the digest. Normalization alternatives are never substituted.",
+  "matchesExpected": false
+}

@@ -1,0 +1,37 @@
+{
+  "reviewVersion": 1,
+  "primaryType": "PaymentEvidence",
+  "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+  "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+  "messageHash": "0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599",
+  "digest": "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774",
+  "unicodeDatabaseVersion": "15.0.0",
+  "strings": [
+    {
+      "path": "/domain/name",
+      "value": "Read-only Payment Evidence",
+      "scalarCount": 26,
+      "utf8Bytes": 26,
+      "utf8Hex": "526561642d6f6e6c79205061796d656e742045766964656e6365",
+      "word": "0x2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2d",
+      "cues": [],
+      "normalizationAlternatives": [],
+      "needsReview": false
+    },
+    {
+      "path": "/domain/version",
+      "value": "1",
+      "scalarCount": 1,
+      "utf8Bytes": 1,
+      "utf8Hex": "31",
+      "word": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+      "cues": [],
+      "normalizationAlternatives": [],
+      "needsReview": false
+    }
+  ],
+  "stringCount": 2,
+  "needsReview": false,
+  "interpretation": "Cues request human review; absence of cues is not approval. Original UTF-8 bytes determine the digest. Normalization alternatives are never substituted.",
+  "matchesExpected": true
+}

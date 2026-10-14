@@ -1,0 +1,90 @@
+{
+  "trials": [
+    {
+      "label": "new suite",
+      "argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/string-review",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_ascii_and_empty (test_string_review.ReviewTests.test_ascii_and_empty) ... ok\ntest_bidi_override_escaped_on_output (test_string_review.ReviewTests.test_bidi_override_escaped_on_output) ... ok\ntest_bytes_and_unreachable_schema_not_strings (test_string_review.ReviewTests.test_bytes_and_unreachable_schema_not_strings) ... ok\ntest_cli_digest_mismatch (test_string_review.ReviewTests.test_cli_digest_mismatch) ... ok\ntest_cli_exit_codes_and_no_partial_output (test_string_review.ReviewTests.test_cli_exit_codes_and_no_partial_output) ... ok\ntest_digest_mismatch (test_string_review.ReviewTests.test_digest_mismatch) ... ok\ntest_domain_and_nested_arrays (test_string_review.ReviewTests.test_domain_and_nested_arrays) ... ok\ntest_duplicate_keys_rejected (test_string_review.ReviewTests.test_duplicate_keys_rejected) ... ok\ntest_historical_zto_digest (test_string_review.ReviewTests.test_historical_zto_digest) ... ok\ntest_legitimate_non_ascii_is_review_not_invalid (test_string_review.ReviewTests.test_legitimate_non_ascii_is_review_not_invalid) ... ok\ntest_nfc_not_substituted (test_string_review.ReviewTests.test_nfc_not_substituted) ... ok\ntest_nfkc_fullwidth (test_string_review.ReviewTests.test_nfkc_fullwidth) ... ok\ntest_no_strings (test_string_review.ReviewTests.test_no_strings) ... ok\ntest_offsets_are_utf8_not_utf16 (test_string_review.ReviewTests.test_offsets_are_utf8_not_utf16) ... ok\ntest_output_bound_fails_closed (test_string_review.ReviewTests.test_output_bound_fails_closed) ... ok\ntest_validation_precedes_walk (test_string_review.ReviewTests.test_validation_precedes_walk) ... ok\ntest_variation_selector (test_string_review.ReviewTests.test_variation_selector) ... ok\ntest_whitespace_and_controls (test_string_review.ReviewTests.test_whitespace_and_controls) ... ok\ntest_workspace_boundary_without_open (test_string_review.ReviewTests.test_workspace_boundary_without_open) ... ok\ntest_zero_width_space (test_string_review.ReviewTests.test_zero_width_space) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.336s\n\nOK\n"
+    },
+    {
+      "label": "zto-payment",
+      "argv": [
+        "line-4/tools/string-review/string_review.py",
+        "line-4/tools/string-review/zto-payment.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n  \"messageHash\": \"0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599\",\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"unicodeDatabaseVersion\": \"15.0.0\",\n  \"strings\": [\n    {\n      \"path\": \"/domain/name\",\n      \"value\": \"Read-only Payment Evidence\",\n      \"scalarCount\": 26,\n      \"utf8Bytes\": 26,\n      \"utf8Hex\": \"526561642d6f6e6c79205061796d656e742045766964656e6365\",\n      \"word\": \"0x2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2d\",\n      \"cues\": [],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": false\n    },\n    {\n      \"path\": \"/domain/version\",\n      \"value\": \"1\",\n      \"scalarCount\": 1,\n      \"utf8Bytes\": 1,\n      \"utf8Hex\": \"31\",\n      \"word\": \"0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6\",\n      \"cues\": [],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": false\n    }\n  ],\n  \"stringCount\": 2,\n  \"needsReview\": false,\n  \"interpretation\": \"Cues request human review; absence of cues is not approval. Original UTF-8 bytes determine the digest. Normalization alternatives are never substituted.\",\n  \"matchesExpected\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "zto-hidden-space",
+      "argv": [
+        "line-4/tools/string-review/string_review.py",
+        "line-4/tools/string-review/zto-hidden-space.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xecd64edd15c833a06e3f707277e41fb76aace22e417bd7dc0b540966a0b6ba75\",\n  \"messageHash\": \"0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599\",\n  \"digest\": \"0xbfb900e0600fc47b3861a5500a57060335882baf9a3c8993bd6f494649334714\",\n  \"unicodeDatabaseVersion\": \"15.0.0\",\n  \"strings\": [\n    {\n      \"path\": \"/domain/name\",\n      \"value\": \"Read-only Payment\\u200b Evidence\",\n      \"scalarCount\": 27,\n      \"utf8Bytes\": 29,\n      \"utf8Hex\": \"526561642d6f6e6c79205061796d656e74e2808b2045766964656e6365\",\n      \"word\": \"0x3c055b9401018b68f08d43b3650818c351efb70782355d5b25b26170aee7721b\",\n      \"cues\": [\n        {\n          \"scalarIndex\": 17,\n          \"utf8OffsetBytes\": 17,\n          \"codePoint\": \"U+200B\",\n          \"name\": \"ZERO WIDTH SPACE\",\n          \"category\": \"Cf\",\n          \"bidirectionalClass\": \"BN\",\n          \"utf8Hex\": \"e2808b\",\n          \"reasons\": [\n            \"non_ascii\",\n            \"control_format_or_unassigned\"\n          ]\n        }\n      ],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": true\n    },\n    {\n      \"path\": \"/domain/version\",\n      \"value\": \"1\",\n      \"scalarCount\": 1,\n      \"utf8Bytes\": 1,\n      \"utf8Hex\": \"31\",\n      \"word\": \"0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6\",\n      \"cues\": [],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": false\n    }\n  ],\n  \"stringCount\": 2,\n  \"needsReview\": true,\n  \"interpretation\": \"Cues request human review; absence of cues is not approval. Original UTF-8 bytes determine the digest. Normalization alternatives are never substituted.\",\n  \"matchesExpected\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "ancestor suite",
+      "argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/scratch/line4-round30/ancestor",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_bad_unicode_and_bad_json (test_bounded_input.BoundedInputTests.test_bad_unicode_and_bad_json) ... ok\ntest_brackets_and_escaped_quotes_in_strings_do_not_count (test_bounded_input.BoundedInputTests.test_brackets_and_escaped_quotes_in_strings_do_not_count) ... ok\ntest_byte_limit_at_boundary (test_bounded_input.BoundedInputTests.test_byte_limit_at_boundary) ... ok\ntest_cli_match_and_mismatch (test_bounded_input.BoundedInputTests.test_cli_match_and_mismatch) ... ok\ntest_cli_rejection_no_traceback_or_success_output (test_bounded_input.BoundedInputTests.test_cli_rejection_no_traceback_or_success_output) ... ok\ntest_cyclic_api_values_and_nonstring_keys_rejected (test_bounded_input.BoundedInputTests.test_cyclic_api_values_and_nonstring_keys_rejected) ... ok\ntest_depth_scanned_before_decoder (test_bounded_input.BoundedInputTests.test_depth_scanned_before_decoder) ... ok\ntest_duplicate_keys_at_any_depth (test_bounded_input.BoundedInputTests.test_duplicate_keys_at_any_depth) ... ok\ntest_example_unchanged_and_absolute_path_supported (test_bounded_input.BoundedInputTests.test_example_unchanged_and_absolute_path_supported) ... ok\ntest_fifo_refused_without_blocking (test_bounded_input.BoundedInputTests.test_fifo_refused_without_blocking) ... ok\ntest_file_and_directory_symlinks_rejected (test_bounded_input.BoundedInputTests.test_file_and_directory_symlinks_rejected) ... ok\ntest_hidden_paths_rejected (test_bounded_input.BoundedInputTests.test_hidden_paths_rejected) ... ok\ntest_node_and_api_text_bounds (test_bounded_input.BoundedInputTests.test_node_and_api_text_bounds) ... ok\ntest_nonfinite_float_and_exponent_rejected (test_bounded_input.BoundedInputTests.test_nonfinite_float_and_exponent_rejected) ... ok\ntest_outside_and_parent_paths_rejected_without_opening (test_bounded_input.BoundedInputTests.test_outside_and_parent_paths_rejected_without_opening) ... ok\ntest_oversize_file_rejected_before_read (test_bounded_input.BoundedInputTests.test_oversize_file_rejected_before_read) ... ok\ntest_bytes_address_boolean_encoding (test_bounded_input.EncodingBoundaryTests.test_bytes_address_boolean_encoding) ... ok\ntest_empty_dynamic_and_nested_fixed_arrays (test_bounded_input.EncodingBoundaryTests.test_empty_dynamic_and_nested_fixed_arrays) ... ok\ntest_encoder_owns_schema_snapshot_when_caching (test_bounded_input.EncodingBoundaryTests.test_encoder_owns_schema_snapshot_when_caching) ... ok\ntest_invalid_types_and_deep_array_types_rejected (test_bounded_input.EncodingBoundaryTests.test_invalid_types_and_deep_array_types_rejected) ... ok\ntest_recursive_type_with_finite_values (test_bounded_input.EncodingBoundaryTests.test_recursive_type_with_finite_values) ... ok\ntest_signed_and_unsigned_limits_and_sign_extension (test_bounded_input.EncodingBoundaryTests.test_signed_and_unsigned_limits_and_sign_extension) ... ok\ntest_type_field_order_changes_digest (test_bounded_input.EncodingBoundaryTests.test_type_field_order_changes_digest) ... ok\ntest_types_and_fields_bounded (test_bounded_input.EncodingBoundaryTests.test_types_and_fields_bounded) ... ok\ntest_dependency_order_and_arrays (test_typed_digest.DigestTests.test_dependency_order_and_arrays) ... ok\ntest_ether_mail_vector (test_typed_digest.DigestTests.test_ether_mail_vector) ... ok\ntest_keccak_vectors (test_typed_digest.DigestTests.test_keccak_vectors) ... ok\ntest_rejects_ambiguous_or_invalid_values (test_typed_digest.DigestTests.test_rejects_ambiguous_or_invalid_values) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.523s\n\nOK\n"
+    },
+    {
+      "label": "detached new suite",
+      "argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "portable",
+        "-v"
+      ],
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_ascii_and_empty (test_string_review.ReviewTests.test_ascii_and_empty) ... ok\ntest_bidi_override_escaped_on_output (test_string_review.ReviewTests.test_bidi_override_escaped_on_output) ... ok\ntest_bytes_and_unreachable_schema_not_strings (test_string_review.ReviewTests.test_bytes_and_unreachable_schema_not_strings) ... ok\ntest_cli_digest_mismatch (test_string_review.ReviewTests.test_cli_digest_mismatch) ... ok\ntest_cli_exit_codes_and_no_partial_output (test_string_review.ReviewTests.test_cli_exit_codes_and_no_partial_output) ... ok\ntest_digest_mismatch (test_string_review.ReviewTests.test_digest_mismatch) ... ok\ntest_domain_and_nested_arrays (test_string_review.ReviewTests.test_domain_and_nested_arrays) ... ok\ntest_duplicate_keys_rejected (test_string_review.ReviewTests.test_duplicate_keys_rejected) ... ok\ntest_historical_zto_digest (test_string_review.ReviewTests.test_historical_zto_digest) ... ok\ntest_legitimate_non_ascii_is_review_not_invalid (test_string_review.ReviewTests.test_legitimate_non_ascii_is_review_not_invalid) ... ok\ntest_nfc_not_substituted (test_string_review.ReviewTests.test_nfc_not_substituted) ... ok\ntest_nfkc_fullwidth (test_string_review.ReviewTests.test_nfkc_fullwidth) ... ok\ntest_no_strings (test_string_review.ReviewTests.test_no_strings) ... ok\ntest_offsets_are_utf8_not_utf16 (test_string_review.ReviewTests.test_offsets_are_utf8_not_utf16) ... ok\ntest_output_bound_fails_closed (test_string_review.ReviewTests.test_output_bound_fails_closed) ... ok\ntest_validation_precedes_walk (test_string_review.ReviewTests.test_validation_precedes_walk) ... ok\ntest_variation_selector (test_string_review.ReviewTests.test_variation_selector) ... ok\ntest_whitespace_and_controls (test_string_review.ReviewTests.test_whitespace_and_controls) ... ok\ntest_workspace_boundary_without_open (test_string_review.ReviewTests.test_workspace_boundary_without_open) ... ok\ntest_zero_width_space (test_string_review.ReviewTests.test_zero_width_space) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.359s\n\nOK\n"
+    },
+    {
+      "label": "detached ZTO CLI",
+      "argv": [
+        "portable/string_review.py",
+        "portable/zto-payment.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"reviewVersion\": 1,\n  \"primaryType\": \"PaymentEvidence\",\n  \"typeEncoding\": \"PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)\",\n  \"domainSeparator\": \"0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d\",\n  \"messageHash\": \"0xac6db73f194d768dad814f953bcc998a7338581d687e8a9107ca85ed94077599\",\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"unicodeDatabaseVersion\": \"15.0.0\",\n  \"strings\": [\n    {\n      \"path\": \"/domain/name\",\n      \"value\": \"Read-only Payment Evidence\",\n      \"scalarCount\": 26,\n      \"utf8Bytes\": 26,\n      \"utf8Hex\": \"526561642d6f6e6c79205061796d656e742045766964656e6365\",\n      \"word\": \"0x2ad8ac25b294864e0d51025440337ef7b83c3d9ae4cc162e9dfc8d1a1ab29f2d\",\n      \"cues\": [],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": false\n    },\n    {\n      \"path\": \"/domain/version\",\n      \"value\": \"1\",\n      \"scalarCount\": 1,\n      \"utf8Bytes\": 1,\n      \"utf8Hex\": \"31\",\n      \"word\": \"0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6\",\n      \"cues\": [],\n      \"normalizationAlternatives\": [],\n      \"needsReview\": false\n    }\n  ],\n  \"stringCount\": 2,\n  \"needsReview\": false,\n  \"interpretation\": \"Cues request human review; absence of cues is not approval. Original UTF-8 bytes determine the digest. Normalization alternatives are never substituted.\",\n  \"matchesExpected\": true\n}\n",
+      "stderr": ""
+    }
+  ],
+  "networkRequired": false,
+  "installedDependencies": []
+}

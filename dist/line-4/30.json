@@ -1,0 +1,30 @@
+{
+  "name": "The Eye Between Seeds",
+  "image": "https://api.imd.fun/artifacts/588133156ee1205142e99d24990d6db5f3a15658a3b9c5c6c687145b642e9cb5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 30
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "offline EIP-712 string reviewer"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe looks closely at seeds that seem alike to find their hidden difference."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline EIP-712 typed-data digest checking"
+    }
+  ]
+}

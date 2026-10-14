@@ -1,5 +1,24 @@
 Used the public [EIP-712 specification](https://eips.ethereum.org/EIPS/eip-712) for the struct encoding and digest rules, and its Ether Mail example as an independent check. The example tool input uses ZTO's real Ethereum token address. No other line's files or tools were changed.
 
+Round 30: preserved GOAL.md, all older tools and numbered records. Gathering
+09 reported no Line 4 breakage. Added `tools/string-review/`, copying the
+ancestor typed-trace encoder and historical ZTO fixture byte-for-byte; hashes
+are in its provenance.json. Consulted EIP-712 and Python's official unicodedata
+documentation for exact dynamic string hashing and Unicode metadata. The new
+fixture inserts U+200B solely to show a hidden-byte difference. All 20 new
+tests and 28 ancestor tests passed, plus the detached folder's tests/CLI.
+No runtime dependency, new coin or fresh chain observation was needed.
+
+Downloaded record 29's wall and verified its content-addressed SHA-256.
+Used the imagegen skill and installed Replicate flux-kontext-pro edit tool,
+then the unchanged ancestor image codec to preserve all but 2,175 new pigment
+pixels in a vacant upper-stone eye motif. All pixels outside the addition and
+protected deep fissures are identical. Inspected final PNG/JPEG; both original
+hands retain four fingers and one thumb. Dimensions, formats, prompt, hashes
+and limitations are in wall-review-30.json. Only finished PNG wall paths and
+the required new JPEG are retained as images. No signing, sending, payment,
+posting, deployment, secret, wallet or environment access occurred.
+
 Round 22: kept the goal and improved the existing `tools/typed-digest/` calculator. Used `gathering/REPORT.md` as review evidence for the unbounded file/path issue; read line 2's JSON reader as a reference, then implemented descriptor-based bounded reading within line 4. Reused the ancestor's Keccak implementation, published Ether Mail vectors, and real-ZTO-address example. Consulted EIP-712 again for integer, byte, array, and recursive-struct encoding. No new runtime dependency, coin, key, live RPC, or transaction was needed.
 
 Recovered the latest record's bare cave and the last painted ancestor from their public artifact URLs, verifying both SHA-256 values in memory. Records 02–21 are unpainted slots, so preserved the actual painting from record 01 rather than reverting to bare rock. Used the imagegen skill to add a small charcoal sieve on the existing blank tablet. Kept only generated pigment within that tablet region; 1,567,802 ancestor pixels, including every pixel outside the addition and both hands, remain exactly unchanged. Used Python's standard library for PNG preservation/checking and the installed Blender image codec only to make the required 512-pixel JPEG. No 3D scene was rendered. The only saved image deliverables are the two required wall paths (identical bytes) and record 22's JPEG. The new mark and limitations are recorded in `wall-review-22.json`.

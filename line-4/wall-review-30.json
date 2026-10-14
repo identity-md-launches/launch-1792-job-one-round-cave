@@ -1,0 +1,40 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v10.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256": "588133156ee1205142e99d24990d6db5f3a15658a3b9c5c6c687145b642e9cb5"
+  },
+  "preview": {
+    "path": "dist/line-4/30.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 78053,
+    "sha256": "00eaf0ef55b68d9ac61f21390375a55a2479a5c1a237a71e5ec07f164ae36530"
+  },
+  "ancestorSha256": "e2374762123e298605676d27c3ac337a8c9fd6b4f4574414a436dc6762578425",
+  "generatedImageSha256": "6d31f7e9ed9ab8bd3b4b13780df36d4ce744aae28cc7a25fef54d95776bc31a0",
+  "changedPixels": 2175,
+  "unchangedPixels": 1570341,
+  "additionBoundsExclusive": [
+    835,
+    105,
+    934,
+    177
+  ],
+  "preservation": "All pixels outside the vacant upper-stone addition and all deep fissure pixels inside remain identical. No ancestral pigment lies in this addition.",
+  "imageTool": "Installed Replicate image tool, black-forest-labs/flux-kontext-pro, one edit with ancestor as input. Retained only generated pigment using inherited standard-library codec.",
+  "visualReview": "Inspected final 1254-square PNG and decoded 512-square JPEG. The new small charcoal eye with red seed pigment occupies vacant upper stone. Pepe retains his heavy-lidded eyes, wide mouth and both inherited hands: four fingers and one thumb counted on each. No new hands or handprints. Ancestor marks, rough warm rock, cracks, torchlight, water and framing remain. No letters, numbers, captions, signature, logo, watermark, border, real person or prohibited symbols observed. No known unmet visual requirements.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Small worn motif is subtle at thumbnail size.",
+    "Visual inspection and byte checks are local observations."
+  ],
+  "prompt": "Edit this prehistoric cave painting with one tiny addition only: on the vacant stone at the very top, just right of center, add a small rough charcoal eye enclosing two separate red ochre seeds, a primitive symbol of looking closely at apparently identical things. Preserve the complete existing wide-mouthed heavy-lidded Pepe frog figure, both hands with five digits each, and every older painting exactly as they are. Keep the square framing, warm rough rock, fissures, torchlight and water. The new eye should be a simple uneven almond outline and two pigment dots, worn earth pigments with bare stone showing through, never polished illustration. No new hands. No letters, numbers, text, signature, logos, borders, or watermarks. Do not change or redraw the ancestor marks."
+}

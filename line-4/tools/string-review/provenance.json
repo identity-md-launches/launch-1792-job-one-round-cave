@@ -1,0 +1,19 @@
+{
+  "unchangedCopies": [
+    {
+      "source": "line-4/tools/typed-trace/typed_digest.py",
+      "copy": "typed_digest.py",
+      "sha256": "a6903cd67fd837f18be3546721830228646df5e144c04f7a5cbd40c5f21854d9"
+    },
+    {
+      "source": "line-4/tools/typed-trace/zto-payment.json",
+      "copy": "zto-payment.json",
+      "sha256": "2cf66267a37b24255fc5a7d2a24489ac5261cb247d4f18e2ef87f0e542d1ef54"
+    }
+  ],
+  "mutationFixture": "zto-hidden-space.json inserts U+200B after Payment in domain.name; all other historical values unchanged; demonstration only",
+  "references": [
+    "https://eips.ethereum.org/EIPS/eip-712",
+    "https://docs.python.org/3/library/unicodedata.html"
+  ]
+}
