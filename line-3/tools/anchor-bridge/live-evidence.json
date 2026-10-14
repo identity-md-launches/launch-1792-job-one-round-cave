@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "source": "https://ethereum-rpc.publicnode.com",
+  "chainId": "0x1",
+  "anchors": {
+    "lower": {
+      "number": 26190898,
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+    },
+    "upper": {
+      "number": 26190909,
+      "hash": "0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc"
+    }
+  },
+  "headers": [
+    {
+      "number": "0x18fa432",
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd",
+      "parentHash": "0x9fbe2c4af05811a1ce4d646055c28709e2cd6a7515a780cbc728383fac544ccd"
+    },
+    {
+      "number": "0x18fa433",
+      "hash": "0x56548dfdf1b00a7d26d79aa5152437ac3245da4fd6f6d7e548e52af2f19bc330",
+      "parentHash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+    },
+    {
+      "number": "0x18fa434",
+      "hash": "0xa10d956cf5a05df0fba60bf1e7ef06b8c8f22be74f0200fbab2f56d12a32d264",
+      "parentHash": "0x56548dfdf1b00a7d26d79aa5152437ac3245da4fd6f6d7e548e52af2f19bc330"
+    },
+    {
+      "number": "0x18fa435",
+      "hash": "0xff02325719aca32151eb86405e5826d99e00d87a8cb8f42465bb0dd4e8d35970",
+      "parentHash": "0xa10d956cf5a05df0fba60bf1e7ef06b8c8f22be74f0200fbab2f56d12a32d264"
+    },
+    {
+      "number": "0x18fa436",
+      "hash": "0xacc400642a4996ffd6b440436ccb4b6e877991c6518b673279d0284032a20dd1",
+      "parentHash": "0xff02325719aca32151eb86405e5826d99e00d87a8cb8f42465bb0dd4e8d35970"
+    },
+    {
+      "number": "0x18fa437",
+      "hash": "0x4dcc48773fd5b3f1bc7270bb9b58e6c7a43a6c703123c19c91c92dab5577bd64",
+      "parentHash": "0xacc400642a4996ffd6b440436ccb4b6e877991c6518b673279d0284032a20dd1"
+    },
+    {
+      "number": "0x18fa438",
+      "hash": "0x609050521f5ca7299fe698d128f27da4c5937b4a1cd8cc1456a5822cc445d804",
+      "parentHash": "0x4dcc48773fd5b3f1bc7270bb9b58e6c7a43a6c703123c19c91c92dab5577bd64"
+    },
+    {
+      "number": "0x18fa439",
+      "hash": "0xab28ddd070fe52e546e97257eb0be3abaf0cb5e1d8bb3a8181799cc4458cb9de",
+      "parentHash": "0x609050521f5ca7299fe698d128f27da4c5937b4a1cd8cc1456a5822cc445d804"
+    },
+    {
+      "number": "0x18fa43a",
+      "hash": "0xfd2166e738c7bbb4c7bc62d16af9c8685c6fc1b91126f7cd678cc0e901a0ac73",
+      "parentHash": "0xab28ddd070fe52e546e97257eb0be3abaf0cb5e1d8bb3a8181799cc4458cb9de"
+    },
+    {
+      "number": "0x18fa43b",
+      "hash": "0x4b19b0965e70c8982920e17be5f00d7ba5e6fd9ce3bcd620a913f1773dacc600",
+      "parentHash": "0xfd2166e738c7bbb4c7bc62d16af9c8685c6fc1b91126f7cd678cc0e901a0ac73"
+    },
+    {
+      "number": "0x18fa43c",
+      "hash": "0x09cee50c09ecc35359627611f94098616aac4e24a0cdb90b8de07801867cf04c",
+      "parentHash": "0x4b19b0965e70c8982920e17be5f00d7ba5e6fd9ce3bcd620a913f1773dacc600"
+    },
+    {
+      "number": "0x18fa43d",
+      "hash": "0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc",
+      "parentHash": "0x09cee50c09ecc35359627611f94098616aac4e24a0cdb90b8de07801867cf04c"
+    }
+  ],
+  "rereads": [
+    {
+      "number": "0x18fa432",
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd",
+      "parentHash": "0x9fbe2c4af05811a1ce4d646055c28709e2cd6a7515a780cbc728383fac544ccd"
+    },
+    {
+      "number": "0x18fa43d",
+      "hash": "0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc",
+      "parentHash": "0x09cee50c09ecc35359627611f94098616aac4e24a0cdb90b8de07801867cf04c"
+    }
+  ]
+}

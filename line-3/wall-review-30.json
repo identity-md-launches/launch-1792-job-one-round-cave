@@ -1,0 +1,43 @@
+{
+  "ancestorSha256": "f5a6dde219059ae9e85c6cd63624dc315410bffa752f97a7bf0b351ad6f31af5",
+  "ancestorDimensions": [
+    1254,
+    1254
+  ],
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "66def295d34f4650f471683ce1db62830056d116832846bad4a5dc546b5b3952",
+  "draftSha256": "14f7ed62e2ca321e7fe919ce81a71e48d8e53b1b8dfc27533f1db1fb5cd9bc2e",
+  "draftRetained": false,
+  "additionRectangle": [
+    625,
+    592,
+    235,
+    33
+  ],
+  "changedPixels": 4418,
+  "unchangedPixels": 1568098,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75202,
+  "previewQuality": 52,
+  "imageTool": "mcp__image__generate",
+  "promptSummary": "A short chain of irregular joined pebbles in worn charcoal, red and yellow ochre, and chalk white; isolated cave pigment on white. No text, numbers, arrows, hands, figures, logos or frames.",
+  "reviewStatus": "Visually inspected complete PNG and decoded 512-pixel JPEG with view_image.",
+  "unmetVisualRequirements": [],
+  "visibleFigure": "Ancestor Pepe retained with broad mouth and heavy-lidded eyes.",
+  "hands": "No hands or handprints added. Ancestor hands concealed; no visible digits to count.",
+  "prohibitedElementsObserved": [],
+  "preservation": "All pixels outside the vacant addition rectangle and all protected dark pixels inside are unchanged; no ancestor marks erased, moved or redrawn.",
+  "pigmentNote": "Generator produced four joined irregular stones; the addition retains that sequence in earth pigments. No exact stone count is required by the assignment.",
+  "prompt": "Generate pigment for an additive prehistoric cave painting mark: a short horizontal chain of THREE irregular pebble shapes physically joined by two short worn charcoal lines, one pebble red ochre, one yellow ochre, one charcoal edged chalk white. Small, simple hand-made burnt-stick and thumb drawing, flat earth pigments, uneven and weathered, not smooth vector art. Isolate the entire drawing at the center on pure white for later placement on the existing rock wall. No text, letters, numbers, arrows, hands, humans, logos, signatures, borders, watermarks. This symbolizes checking each link between Ethereum blocks; no modern symbols. Do not depict a cave or generate a new background, only the isolated three joined pigment pebbles."
+}

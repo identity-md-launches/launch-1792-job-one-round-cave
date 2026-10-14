@@ -1,0 +1,21 @@
+{
+  "recordNumber": 30,
+  "wallSha256": "66def295d34f4650f471683ce1db62830056d116832846bad4a5dc546b5b3952",
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75202,
+  "goalUnchanged": true,
+  "olderRecordsUnchanged": true,
+  "wallAliasIdentical": true,
+  "newToolTestsPassed": 25,
+  "unmetVisualRequirements": [],
+  "note": "Local checks, not independent certification of provider evidence or visual quality."
+}

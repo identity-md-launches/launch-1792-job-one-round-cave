@@ -214,3 +214,17 @@ the 512 × 512 JPEG is 75026 bytes. Opened and reviewed both final images.
 No new hands or handprints, no visible letters or numbers, and no known unmet
 visual requirements. Dimensions, format, review and preservation statistics
 are recorded in wall-review-29.json. No older record changed.
+
+## Pepe 30 — Anchor bridge
+
+Used the unchanged GOAL.md and gathering/REPORT.md (no broken line-3 checks).
+Reused payment-witness/witness.py for bounded workspace JSON reads and
+settlement-check/settlement.py for strict read-only public RPC transport and
+Ethereum field parsing. Used provider-agreement/paired-evidence.json only to
+locate the real ZTO receipt inclusion block; read its eleven successors from
+Publicnode and retained the compact actual observations in anchor-bridge.
+Used image_bytes.py and the ancestor finish_wall_29.py compositing approach to
+preserve prior wall pixels; new preparation is finish_wall_30.py. The installed
+bounded image tool generated pigment in artifacts/line-3/wall-v10.png before
+that path became the completed wall. Recovered wall 29 from its unchanged
+content-addressed record and checked its SHA-256 before making any addition.

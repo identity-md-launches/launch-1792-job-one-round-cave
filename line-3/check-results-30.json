@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/anchor-bridge",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_anchor_lost_on_chain (test_bridge.BridgeTests.test_anchor_lost_on_chain) ... ok\ntest_boolean_height (test_bridge.BridgeTests.test_boolean_height) ... ok\ntest_boolean_version (test_bridge.BridgeTests.test_boolean_version) ... ok\ntest_broken_middle_link (test_bridge.BridgeTests.test_broken_middle_link) ... ok\ntest_changed_endpoint_parent (test_bridge.BridgeTests.test_changed_endpoint_parent) ... ok\ntest_collect_replay_request_order (test_bridge.BridgeTests.test_collect_replay_request_order) ... ok\ntest_demo_cli (test_bridge.BridgeTests.test_demo_cli) ... ok\ntest_exact_budget (test_bridge.BridgeTests.test_exact_budget) ... ok\ntest_expected_hash_mismatch (test_bridge.BridgeTests.test_expected_hash_mismatch) ... ok\ntest_extra_fields (test_bridge.BridgeTests.test_extra_fields) ... ok\ntest_extra_header (test_bridge.BridgeTests.test_extra_header) ... ok\ntest_invalid_budgets_before_transport (test_bridge.BridgeTests.test_invalid_budgets_before_transport) ... ok\ntest_invalid_parent_hash (test_bridge.BridgeTests.test_invalid_parent_hash) ... ok\ntest_missing_header (test_bridge.BridgeTests.test_missing_header) ... ok\ntest_missing_reread (test_bridge.BridgeTests.test_missing_reread) ... ok\ntest_null_provider_header (test_bridge.BridgeTests.test_null_provider_header) ... ok\ntest_real_zto_interval (test_bridge.BridgeTests.test_real_zto_interval) ... ok\ntest_reordered (test_bridge.BridgeTests.test_reordered) ... ok\ntest_reverse_anchors (test_bridge.BridgeTests.test_reverse_anchors) ... ok\ntest_same_height (test_bridge.BridgeTests.test_same_height) ... ok\ntest_same_height_conflict (test_bridge.BridgeTests.test_same_height_conflict) ... ok\ntest_unsupported_source_before_transport (test_bridge.BridgeTests.test_unsupported_source_before_transport) ... ok\ntest_wrong_chain (test_bridge.BridgeTests.test_wrong_chain) ... ok\ntest_wrong_number (test_bridge.BridgeTests.test_wrong_number) ... ok\ntest_wrong_source (test_bridge.BridgeTests.test_wrong_source) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.014s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/anchor-bridge/bridge.py",
+        "--demo"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"accepted\": true,\n  \"state\": \"observed_ancestry_connected\",\n  \"anchors\": {\n    \"lower\": {\n      \"number\": 26190898,\n      \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n    },\n    \"upper\": {\n      \"number\": 26190909,\n      \"hash\": \"0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc\"\n    }\n  },\n  \"linksChecked\": 11,\n  \"brokenAtHeights\": [],\n  \"alerts\": [],\n  \"source\": \"https://ethereum-rpc.publicnode.com\",\n  \"evidenceMode\": \"offline replay of provider-observed parent links\",\n  \"evidenceLimit\": \"Provider-observed parent hashes, not cryptographically recomputed headers, consensus, receipt inclusion or a settlement decision. Anchors must be retained independently. Later reorgs remain possible; no claim is made outside this bounded interval.\",\n  \"demoNote\": \"Real ZTO inclusion and its eleventh successor; illustrative saved anchors, not independent approval or present settlement.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/anchor-bridge/bridge.py",
+        "--anchors",
+        "line-3/tools/anchor-bridge/demo-anchors.json",
+        "--replay",
+        "line-3/tools/anchor-bridge/live-evidence.json",
+        "--max-links",
+        "11"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"accepted\": true,\n  \"state\": \"observed_ancestry_connected\",\n  \"anchors\": {\n    \"lower\": {\n      \"number\": 26190898,\n      \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n    },\n    \"upper\": {\n      \"number\": 26190909,\n      \"hash\": \"0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc\"\n    }\n  },\n  \"linksChecked\": 11,\n  \"brokenAtHeights\": [],\n  \"alerts\": [],\n  \"source\": \"https://ethereum-rpc.publicnode.com\",\n  \"evidenceMode\": \"offline replay of provider-observed parent links\",\n  \"evidenceLimit\": \"Provider-observed parent hashes, not cryptographically recomputed headers, consensus, receipt inclusion or a settlement decision. Anchors must be retained independently. Later reorgs remain possible; no claim is made outside this bounded interval.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "newTestsPassed": 25,
+  "liveResult": "observed_ancestry_connected",
+  "liveLinksChecked": 11
+}

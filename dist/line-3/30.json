@@ -1,0 +1,30 @@
+{
+  "name": "Every Stone Connected",
+  "image": "https://api.imd.fun/artifacts/66def295d34f4650f471683ce1db62830056d116832846bad4a5dc546b5b3952",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 30
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "anchor-bridge"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe joins worn stones to check every link between two remembered blocks."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}
