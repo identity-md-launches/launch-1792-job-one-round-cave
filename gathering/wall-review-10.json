@@ -1,0 +1,37 @@
+{
+  "ancestorSha256": "2daa514aae24125f90df19455e61febb0880af5b01007fd14c8030a83f2a6b1e",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "3359bb48ddff08e0e2152c4d0edb4d931d6df927792748d0ca60504adf6a8de4",
+  "generatedDraftSha256": "2d5c6592679ecc1a15d17d9e6c5aa6e1030e5092295fdfe514606795ff437fe9",
+  "generatedDraftRetained": false,
+  "changedPixels": 3150,
+  "unchangedPixels": 1569366,
+  "additionRectangle": [
+    175,
+    115,
+    120,
+    120
+  ],
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75935,
+  "imageTool": "mcp__image__generate_image",
+  "prompt": "Preserve the complete ancestral cave and all older marks. Add a small worn charcoal/red ochre heavy-lidded broad-mouth Pepe head above three linked pebbles on vacant upper-left rock. No hands, text, numbers, logos or borders.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "visualNotes": "Warm rock, framing and older marks preserved. New heavy-lidded wide-mouth Pepe and linked stones in charcoal. No hands or handprints, hence no digits to count. No forbidden text or symbols observed."
+}

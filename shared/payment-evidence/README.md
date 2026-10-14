@@ -535,3 +535,64 @@ but unbound evidence, replaced baseline, request pin before evidence access,
 baseline pin before current/candidate access, missing current input and output
 size. `gathering/check_round_09.py` also tests the detached folder and the newest
 Line 2 and Line 4 expected rejections.
+
+## Gathering 10: payment policy plus a bounded parent walk
+
+`anchored_payment.py` makes Line 3's new anchor bridge available to users of the
+shared Line 2 structural validator and Line 4 EIP-712 evidence commitment. Copy
+this entire folder; Python standard library and POSIX are sufficient. The new
+bridge and its two historical fixtures are byte-for-byte copies, identified in
+`provenance.json`. Its inherited shared RPC constructor is disabled: this command
+only reads explicit workspace files and prints JSON.
+
+From the repository root:
+
+```sh
+python3 -B shared/payment-evidence/anchored_payment.py shared/payment-evidence/example.transcript.json shared/payment-evidence/example.policy.json shared/payment-evidence/anchor-evidence.json shared/payment-evidence/anchor-expectations.json --max-links 11
+```
+
+Observed exit **0**, `payment_and_bounded_ancestry_match`: the historical real ZTO
+receipt satisfies the separate payment policy, and all **11 parent links** from
+inclusion block **26190898** through **26190909** connect. This covers the example's
+12-confirmation interval, counting inclusion. `example.anchored-payment.json`
+retains that result. The demo's policy and anchors come from historical provider
+observations; they are illustrative, not an independent invoice or approval.
+
+For actual use, supply your own independently chosen policy and retained anchors,
+a payment transcript and a separately collected bounded parent walk. The lower
+anchor must equal the checked payment inclusion, the upper cannot exceed the
+payment observation's head, and the interval must cover the confirmation policy.
+Any inclusion/head/finalized-head fact at a height in the walk must have the same
+hash. The caller budget is mandatory, 1–64 links; larger intervals fail rather
+than being silently shortened. The inputs are not modified.
+
+Both checks must pass. A connected chain cannot rescue an insufficient payment;
+a settled payment cannot rescue a disconnected or too-short chain. The resulting
+EIP-712 content commitment covers the entire payment transcript, walk, independent
+anchors and caller budget through `transcriptHash`, plus the explicit policy.
+It differs from the older single-transcript commitment and is never signed or
+sent. The complete ASCII JSON report is capped at 100,000 bytes. Input files use
+the inherited strict bounded reader (65,536 bytes, no duplicate keys, symlinks,
+hidden or parent paths). Policy and anchor budgets are validated before evidence
+files are opened. Exit 0 means both checks pass, 1 means review required, and 2
+means invalid input or output bounds.
+
+```sh
+python3 -B shared/payment-evidence/test_anchored_payment.py
+```
+
+All **14 tests passed**, covering real historical replay, immutability, broken
+middle links, wrong independent anchors, unrelated/short intervals, insufficient
+payment, policy substitution, shared-height conflicts, an upper beyond the head,
+invalid budgets, complete commitment binding, disabled transport, output limits
+and CLI results. The same demo and tests pass from a detached copy without line
+folders or packages (`gathering/round-checks-10.json`).
+
+This is a bounded observation, not proof of Ethereum consensus, header hashing,
+receipt inclusion, current canonicality or freshness. The short example does not
+walk to its sampled head or finalized head. Neither matching source labels nor
+these content commitments authenticate a provider; consistently forged evidence
+can pass. The wrapper does not establish independent operators, recipient
+ownership, invoice provenance, payment deduplication, authorization or contract
+support. Use the older paired/time tools for their separate policies; this command
+does not claim to incorporate those checks.

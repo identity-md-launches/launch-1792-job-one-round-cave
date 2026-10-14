@@ -46,3 +46,24 @@ RGB PNG**; `dist/gathering/09.jpg`, **512 × 512 JPEG**; and `09.json`.
 `wall-review-09.json` records the prompt, preservation, hashes, dimensions,
 formats and review. The gallery holds 45 paintings and 92 pending slots.
 The required PNG remains untracked for separate upload.
+
+## Gathering 10
+
+See `REPORT.md` for the latest four-line review. `run_checks.py` now runs all
+94 inherited/current check commands. `check_round_10.py` exercises the new shared
+anchored payment bridge, a detached copy, live ZTO replay and expected rejection.
+`check_delivery.py` checks round 10 outputs and the unchanged line-source snapshot.
+
+The installed image tool generated the small Pepe with linked stones. Only its
+charcoal pigment was composited onto vacant ancestral rock; the generated full
+edit was discarded. Final output: `artifacts/gathering/wall-v10.png` (1254 square
+RGB PNG), alias `wall.png`, and `dist/gathering/10.jpg` (512 square JPEG).
+`wall-review-10.json` records the prompt, hashes and visual inspection. No known
+unmet visual requirements; no hands or handprints were added. The bridge remains
+historical provider evidence, not a current payment or consensus proof.
+
+One command to check the delivery from the repository root:
+
+```sh
+python3 -B gathering/check_delivery.py
+```

@@ -1,9 +1,9 @@
 none
 
-All four goals work through public Ethereum reads or offline computation.
-The shared checkpoint/request review also needs no new asset or Uniswap v4
-hook. Its real token examples use ZTO first; inherited payment checks support
-IMD second. Neither token needs replacement to make any current line exist.
-
-No coin is requested and no contract is ready to nominate for Sepolia.
-No coin order, deploy order, signing, payment, posting or deployment was made.
+The four goals are public Ethereum observation, structural JSON validation,
+settlement-policy replay and offline EIP-712 review. None needs a new asset or
+Uniswap v4 hook to exist. ZTO already supplies actual chain observations and
+payment examples; IMD remains the second supported payment token. A new coin
+would add no required capability. No launch order or Sepolia deployment order
+is proposed: this round adds Python tooling, not a deployable contract. Nothing
+was signed, sent, paid or deployed.

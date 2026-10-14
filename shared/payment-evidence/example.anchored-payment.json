@@ -1,0 +1,144 @@
+{
+  "accepted": true,
+  "state": "payment_and_bounded_ancestry_match",
+  "alerts": [],
+  "payment": {
+    "chainId": 1,
+    "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "head": {
+      "number": 26191361,
+      "hash": "0xf72e441b763997bff34ccd33882468ffb95526321b16582c972e73d5f4484eab"
+    },
+    "policy": {
+      "minimumConfirmations": 12,
+      "requireFinalized": true
+    },
+    "settled": true,
+    "inclusion": {
+      "number": 26190898,
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+    },
+    "execution": "succeeded",
+    "finalizedHead": {
+      "number": 26191269,
+      "hash": "0xc492993fd90ab9821b6b1124f9f844a8f2230cfc74f45c76767a773359bb2db7"
+    },
+    "confirmations": 464,
+    "finalized": true,
+    "state": "settled",
+    "reason": "Execution and canonical-chain evidence meet the selected policy.",
+    "accepted": true,
+    "paymentPolicy": {
+      "token": "ZTO",
+      "contract": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+      "minimumRaw": "166357571280020680094504",
+      "measure": "incoming minus outgoing Transfer amounts in this receipt"
+    },
+    "transferEvidence": {
+      "incomingRaw": "166357571280020680094504",
+      "outgoingRaw": "0",
+      "netRaw": "166357571280020680094504",
+      "events": [
+        {
+          "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+          "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "raw": "166357571280020680094504",
+          "logIndex": 632
+        }
+      ]
+    },
+    "paymentState": "verified"
+  },
+  "parentWalk": {
+    "accepted": true,
+    "state": "observed_ancestry_connected",
+    "anchors": {
+      "lower": {
+        "number": 26190898,
+        "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+      },
+      "upper": {
+        "number": 26190909,
+        "hash": "0xa5ca989059d9515c55fc98b5d40200656e7dcb3f8e9781d43d486eddcd2b3cdc"
+      }
+    },
+    "linksChecked": 11,
+    "brokenAtHeights": [],
+    "alerts": [],
+    "source": "https://ethereum-rpc.publicnode.com",
+    "evidenceMode": "offline replay of provider-observed parent links",
+    "evidenceLimit": "Provider-observed parent hashes, not cryptographically recomputed headers, consensus, receipt inclusion or a settlement decision. Anchors must be retained independently. Later reorgs remain possible; no claim is made outside this bounded interval."
+  },
+  "typedData": {
+    "types": {
+      "EIP712Domain": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "name": "chainId",
+          "type": "uint256"
+        }
+      ],
+      "PaymentEvidence": [
+        {
+          "name": "transactionHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "name": "minimumRaw",
+          "type": "uint256"
+        },
+        {
+          "name": "confirmations",
+          "type": "uint256"
+        },
+        {
+          "name": "requireFinalized",
+          "type": "bool"
+        },
+        {
+          "name": "transcriptHash",
+          "type": "bytes32"
+        }
+      ]
+    },
+    "primaryType": "PaymentEvidence",
+    "domain": {
+      "name": "Read-only Payment Evidence",
+      "version": "1",
+      "chainId": 1
+    },
+    "message": {
+      "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "token": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+      "minimumRaw": "166357571280020680094504",
+      "confirmations": 12,
+      "requireFinalized": true,
+      "transcriptHash": "0x3cf7bf979c22e922a5f3d1e11137922d2058e248416cbfca766fe9d192fbc048"
+    }
+  },
+  "commitment": {
+    "primaryType": "PaymentEvidence",
+    "typeEncoding": "PaymentEvidence(bytes32 transactionHash,address token,address recipient,uint256 minimumRaw,uint256 confirmations,bool requireFinalized,bytes32 transcriptHash)",
+    "domainSeparator": "0xb841b9b4b38823bdf4340d649cbad52a49cb75b55ddd1f91b457246dcb4f807d",
+    "messageHash": "0x01807d1bbf8f2e65144f56819d8a19f0f245ddd626d086c3e30696ca19c416fb",
+    "digest": "0x46a71027dc3a6a6b886ae4a1598a6b8a89fcf492494a7151fde400bede497506"
+  },
+  "evidenceLimit": "Historical provider assertions, not header/receipt proofs or current settlement. The walk need not reach the sampled head or finalized head. Caller anchors and policy must be chosen independently. Digest equality is not authorization."
+}

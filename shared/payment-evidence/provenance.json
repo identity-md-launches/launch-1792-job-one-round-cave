@@ -145,5 +145,26 @@
     "sha256": "b4b25907188b44255faae6a8cbad99458cfd5359dfceee57dca89a82c4d02485",
     "copiedSha256": "b4b25907188b44255faae6a8cbad99458cfd5359dfceee57dca89a82c4d02485",
     "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-3/tools/anchor-bridge/bridge.py",
+    "copy": "vendor/anchor-bridge/bridge.py",
+    "sha256": "40fabc99fcf277426f2fb14a577e1208005ae0908a04b93bb95f40b373f3c95e",
+    "copiedSha256": "40fabc99fcf277426f2fb14a577e1208005ae0908a04b93bb95f40b373f3c95e",
+    "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-3/tools/anchor-bridge/live-evidence.json",
+    "copy": "anchor-evidence.json",
+    "sha256": "07c0c538a975b001ccc2de7f3eb474973dbbee936407ed3daf4d8cb4d978e609",
+    "copiedSha256": "07c0c538a975b001ccc2de7f3eb474973dbbee936407ed3daf4d8cb4d978e609",
+    "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-3/tools/anchor-bridge/demo-anchors.json",
+    "copy": "anchor-expectations.json",
+    "sha256": "7c336819549541019bb27735b969f17f5a162d16396cf81ea718d4010f59f267",
+    "copiedSha256": "7c336819549541019bb27735b969f17f5a162d16396cf81ea718d4010f59f267",
+    "adaptation": "none; byte-for-byte source copy"
   }
 ]

@@ -60,3 +60,7 @@ then bind the exact current pair to a pinned request and explain changed client
 values. Two byte-for-byte vendor copies, real historical ZTO inputs, 12 integration
 tests and a detached offline trial are included. See the payment bridge README
 for the command and the two different retained-pin schemes.
+
+Gathering 10 adds `payment-evidence/anchored_payment.py`: it joins the bounded
+parent-link walk to the structural payment policy and full EIP-712 evidence
+commitment. The README includes a real historical ZTO demo and 14 regression tests.
