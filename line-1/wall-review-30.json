@@ -1,0 +1,14 @@
+{
+  "record": 30,
+  "ancestor_record": 29,
+  "ancestor_sha256": "af98464f7724f387d3663f26315c634e3d5c0157b488eb45203f8e86d35770df",
+  "output_sha256": "74973235129c9342d75f1354bfae1265c1f8f4e7507e9a963ea6c95f595d5ec7",
+  "wall": {"paths": ["artifacts/line-1/wall.png", "artifacts/line-1/wall-v10.png"], "format": "PNG", "width": 1254, "height": 1254, "mode": "RGB"},
+  "thumbnail": {"path": "dist/line-1/30.jpg", "format": "JPEG", "width": 512, "height": 512, "bytes": 76086},
+  "mark": "Two linked ochre pebbles generated as translucent cave pigment, then placed on previously open upper-right rock.",
+  "preserved": "Only pixels inside x=910..1139, y=210..362 could change; the ancestor painting, cave framing and all pixels outside that patch remain unchanged.",
+  "changed_pixels": 6086,
+  "actual_changed_bbox": [938, 260, 1113, 318],
+  "visual_review": "The rough warm rock, cracks, torchlit color and recognizable heavy-lidded, wide-mouthed Pepe remain. The inherited hands each show four fingers and a thumb. The new mark adds no hands or handprints. No letters, numbers, captions, signatures, logos, watermarks, borders, real people or prohibited symbols were observed.",
+  "unmet_visual_requirements": []
+}

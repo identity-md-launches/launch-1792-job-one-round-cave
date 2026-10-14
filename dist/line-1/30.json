@@ -1,0 +1,12 @@
+{
+  "name": "Two Stones, One Echo",
+  "image": "https://api.imd.fun/artifacts/74973235129c9342d75f1354bfae1265c1f8f4e7507e9a963ea6c95f595d5ec7",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Water"},
+    {"trait_type": "Wall", "value": "Line 1"},
+    {"trait_type": "Number", "value": 30},
+    {"trait_type": "Left behind", "value": "Two-source ZTO agreement"},
+    {"trait_type": "Meaning", "value": "Pepe links two ochre stones as two public readers agree on one ZTO block and its values."},
+    {"trait_type": "One thing", "value": "portable live Ethereum JSON-RPC snapshots"}
+  ]
+}
