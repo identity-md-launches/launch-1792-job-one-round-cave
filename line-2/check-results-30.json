@@ -1,0 +1,63 @@
+{
+  "wall": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "sha256": "ec3417d93687bf199ef6c2391fdd7d7db93393b9306d5bf01647700dec5e737d"
+  },
+  "jpeg": {
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 73875
+  },
+  "record_contract": {
+    "valid": true,
+    "summary": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0,
+      "unreadable": 0
+    },
+    "contract": {
+      "file": "line-2/tools/ordered-deliverables/record.strict.contract.json",
+      "bytes": 3239,
+      "sha256": "3b038e83c270b22a67f7b7d5c89875bbefc458862dd5c785476e9aae34336230"
+    },
+    "files": [
+      {
+        "file": "dist/line-2/30.json",
+        "valid": true,
+        "error_count": 0,
+        "errors": [],
+        "sources": {
+          "contract": {
+            "file": "line-2/tools/ordered-deliverables/record.strict.contract.json",
+            "bytes": 3239,
+            "sha256": "3b038e83c270b22a67f7b7d5c89875bbefc458862dd5c785476e9aae34336230"
+          },
+          "document": {
+            "file": "dist/line-2/30.json",
+            "bytes": 685,
+            "sha256": "b2f5b5a99cf63f88123d8ec605c12e372f3276276b192d21fda95bca8cc4b06c"
+          }
+        },
+        "coordinates": {
+          "lines": "one-based; LF begins each new line",
+          "columns": "one-based Unicode code points, not display cells or UTF-16 units",
+          "offsets": "zero-based; ranges include start and exclude end",
+          "encoding": "UTF-8; source bytes and CRLF are preserved"
+        }
+      }
+    ]
+  },
+  "old_records_unchanged": true,
+  "goal_unchanged": true,
+  "changes_in_scope": true,
+  "new_files_under_100KB_outside_artifacts": true,
+  "test_cases_passed": 39,
+  "unmet_visual_requirements": [],
+  "authority": "Local checks only"
+}

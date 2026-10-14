@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-guard/test_review.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.101s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-guard/review.py",
+        "line-2/tools/source-locator/invalid-report.result.json",
+        "line-2/tools/json-contract/report.contract.json",
+        "line-2/tools/rule-locator/report.invalid.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"matches\": true,\n  \"report_sha256\": \"7b4836b1c3ae869758d1f54916f96be5dead4947755c553200ee9be3ffe14c8a\",\n  \"sources\": {\n    \"contract\": {\n      \"file\": \"line-2/tools/json-contract/report.contract.json\",\n      \"bytes\": 621,\n      \"sha256\": \"42c48ea1ab01acc4270ab878bc8988c4439b5d9fad5c953123b76f44968c4c13\"\n    },\n    \"document\": {\n      \"file\": \"line-2/tools/rule-locator/report.invalid.json\",\n      \"bytes\": 139,\n      \"sha256\": \"c346ea1106c87b8183edc96693a77bcf0ebefdcd8a4748e23e42592770af4638\"\n    }\n  },\n  \"status\": \"report_reproduced\",\n  \"document_valid\": false,\n  \"error_count\": 3\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/source-locator/test_locate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_actual_invalid_report (__main__.SourceTests.test_actual_invalid_report) ... ok\ntest_actual_saved_zto_policy (__main__.SourceTests.test_actual_saved_zto_policy) ... ok\ntest_actual_strict_numbered_record (__main__.SourceTests.test_actual_strict_numbered_record) ... ok\ntest_additional_property_key_span (__main__.SourceTests.test_additional_property_key_span) ... ok\ntest_all_supported_constraints_and_multiplicity (__main__.SourceTests.test_all_supported_constraints_and_multiplicity) ... ok\ntest_all_token_types_and_exact_ranges (__main__.SourceTests.test_all_token_types_and_exact_ranges) ... ok\ntest_cli_exits_and_no_follow_boundaries (__main__.SourceTests.test_cli_exits_and_no_follow_boundaries) ... ok\ntest_empty_and_escaped_missing_names (__main__.SourceTests.test_empty_and_escaped_missing_names) ... ok\ntest_escaped_lexemes_are_not_reserialized (__main__.SourceTests.test_escaped_lexemes_are_not_reserialized) ... ok\ntest_input_identity_commits_formatting (__main__.SourceTests.test_input_identity_commits_formatting) ... ok\ntest_malformed_duplicate_nonfinite_and_encoding_refused (__main__.SourceTests.test_malformed_duplicate_nonfinite_and_encoding_refused) ... ok\ntest_many_flat_tokens (__main__.SourceTests.test_many_flat_tokens) ... ok\ntest_missing_field_and_present_null_are_distinct (__main__.SourceTests.test_missing_field_and_present_null_are_distinct) ... ok\ntest_prefix_tail_and_duplicate_locations (__main__.SourceTests.test_prefix_tail_and_duplicate_locations) ... ok\ntest_root_span_and_trailing_whitespace (__main__.SourceTests.test_root_span_and_trailing_whitespace) ... ok\ntest_unicode_crlf_tabs_and_escaped_key (__main__.SourceTests.test_unicode_crlf_tabs_and_escaped_key) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.233s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/batch-source/test_locate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_errors_point_into_exact_contract_and_document_bytes (__main__.BatchSource.test_errors_point_into_exact_contract_and_document_bytes) ... ok\ntest_invalid_contract_fails_before_documents (__main__.BatchSource.test_invalid_contract_fails_before_documents) ... ok\ntest_malformed_document_is_counted_and_later_file_runs (__main__.BatchSource.test_malformed_document_is_counted_and_later_file_runs) ... ok\ntest_real_records_keep_order_and_hashes (__main__.BatchSource.test_real_records_keep_order_and_hashes) ... ok\ntest_refuses_symlink_document (__main__.BatchSource.test_refuses_symlink_document) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.669s\n\nOK\n"
+    }
+  ],
+  "authority": "Local observations only"
+}

@@ -1,0 +1,42 @@
+{
+  "number": 30,
+  "ancestor_sha256": "eb73ac72acdcb9d58e134520f36433b5f28670f0148bba8c37ac0cde295b4086",
+  "sha256": "ec3417d93687bf199ef6c2391fdd7d7db93393b9306d5bf01647700dec5e737d",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v10.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB"
+  },
+  "preview": {
+    "path": "dist/line-2/30.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 73875
+  },
+  "addition_region": {
+    "x": 220,
+    "y": 670,
+    "width": 190,
+    "height": 145
+  },
+  "changed_pixels": 2991,
+  "unchanged_pixels": 1569525,
+  "outside_region_pixel_identical": true,
+  "dark_cracks_preserved": true,
+  "generation_tool": "mcp__image__edit_image",
+  "draft_sha256": "40d3ba70c2033266093bb96ad244675c072481eb912ee0c032113b1d4e0303f2",
+  "draft_retained": false,
+  "visual_review": "Inspected final PNG and decoded JPEG: ancestor marks, rock, cracks, light and framing preserved; new faint Pepe head and linked pebble outlines; no text or prohibited additions observed.",
+  "unmet_visual_requirements": [],
+  "hands": "No hands or handprints added; no new digits to count.",
+  "limitations": [
+    "New worn head details are faint at 512-pixel thumbnail scale.",
+    "Local visual review is not independent certification."
+  ]
+}

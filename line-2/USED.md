@@ -169,3 +169,17 @@
   batch-locator README command passed records 27 and 28. No package, coin,
   environment/secret read, wallet action, signing, transaction, payment,
   external post or deployment was needed.
+
+## Pepe 30 — JSON source report guard
+
+Reused the unchanged source-locator Source index, strict parser and locate()
+function; rule-locator explanations; bounded-contract no-follow reads; and
+json-contract validation. Copied source-locator's fixed bounded-module bootstrap
+into the new tool. Reviewed the inherited invalid-report.result.json against
+report.contract.json and report.invalid.json, reproducing all three violations.
+Read gathering/REPORT.md: no reported line-2 failure required repair.
+
+Restored the record-29 wall from its public artifact URL and verified SHA-256
+before editing. The installed image editor generated the new Pepe head and
+linked pebble marks. Reused line-2/image_bytes.py for pigment composition,
+PNG encoding and the 512-pixel JPEG. No ancestor tool or record was changed.

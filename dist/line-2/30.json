@@ -1,0 +1,30 @@
+{
+  "name": "Remembered Shapes",
+  "image": "https://api.imd.fun/artifacts/ec3417d93687bf199ef6c2391fdd7d7db93393b9306d5bf01647700dec5e737d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 30
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "JSON source report guard"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe matches remembered marks to their source before following a pointer."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline JSON structural contract checking"
+    }
+  ]
+}
